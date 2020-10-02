@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">newtest</string>
+    <string name="Label">Вице Президент</string>
+    <string name="see_fio">Столяров Евгений Евгеньевич</string>
+    <string name="see_info">E-mail: evgeni-stolyarov@yandex.ru\n
+        Служ. тел.: 8 (81751) 2-45-88\n
+        Адрес: Вологодская область. г. Шексна</string>
+    <string name="see_more">Больше информации</string>
+</resources>
