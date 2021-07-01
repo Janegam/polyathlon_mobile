@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ThirdFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main"
+            android:background="@color/colorBackground">
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:verticalScrollbarPosition="right"
+            android:overScrollMode="ifContentScrolls"
+            android:id="@+id/scrollView2">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/profileLayout">
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingTop="10dp"
+                    android:id="@+id/top">
+
+                <TextView
+                        android:text="2021г."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/yearView2"
+                        android:fontFamily="@font/comfortaa"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorCommon"
+                        android:layout_marginLeft="20dp"/>
+
+                <TextView
+                        android:text="4-борье с бегом"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/kind"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/colorCommon"
+                        android:fontFamily="@font/comfortaa"
+                        android:textSize="18sp"/>
+
+                <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/town"
+                        android:layout_gravity="right"
+                        android:background="@android:drawable/ic_dialog_map"
+                        android:layout_marginRight="20dp"
+                        android:tint="@color/colorCommon"
+                        android:layout_marginBottom="5dp"/>
+
+            </FrameLayout>
+
+            <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#80FFFFFF"
+                    />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                <TextView
+                        android:text="Абсолютное первенство"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/championship"
+                        android:fontFamily="@font/comfortaa"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorCommon"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/championship"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:checkedButton="@id/radioButton"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:id="@+id/radiogroup">
+
+                    <RadioButton
+                            android:layout_width="70dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/radioButton"
+                            android:layout_weight="1"
+                            android:layout_marginTop="10dp"
+                            android:paddingTop="10dp"
+                            android:button="@drawable/absolute_championship_selector"
+                            android:foregroundGravity="center_horizontal"/>
+
+                    <RadioButton
+                            android:layout_width="70dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/radioButton2"
+                            android:layout_weight="1"
+                            android:button="@drawable/absolute_championship_selector"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:gravity="center|fill_horizontal"
+                            />
+
+                    <RadioButton
+                            android:layout_width="70dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/radioButton3"
+                            android:layout_weight="1"
+                            android:button="@drawable/absolute_championship_selector"
+                            android:layout_marginTop="10dp"
+                            android:paddingTop="10dp"/>
+
+                    <RadioButton
+                            android:layout_width="70dp"
+                            android:layout_height="100dp"
+                            android:id="@+id/radioButton4"
+                            android:layout_weight="1"
+                            android:button="@drawable/absolute_championship_selector"
+                            android:layout_marginTop="10dp"
+                            android:paddingTop="10dp"/>
+
+                </RadioGroup>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#80FFFFFF"
+                    />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/story_card">
+
+                <TextView
+                        android:text="Места"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/Places"
+                        android:fontFamily="@font/comfortaa"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorCommon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TableLayout
+                        android:layout_width="336dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="70dp"
+                        android:showDividers="middle|beginning|end"
+                        android:divider="@android:drawable/divider_horizontal_bright"
+                        android:shrinkColumns="0"
+                        android:id="@+id/PlaceTable">
+
+                    <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ic_table_up"
+                            android:id="@+id/first">
+
+                        <TextView
+                                android:text="Результатов нет"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textFirst"
+                                android:textColor="@color/colorCommon"
+                                android:fontFamily="@font/roboto_medium"
+                                android:textSize="18sp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="5dp"/>
+
+                    </TableRow>
+
+                    <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/ic_table_bottom"
+                            android:id="@+id/botton"/>
+
+                </TableLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

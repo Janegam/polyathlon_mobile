@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/firstPage"
+            android:title="competitions"
+            android:icon="@drawable/ic_stadium_menu"/>
+    <item
+            android:id="@+id/secondPage"
+            android:title="profile"
+            android:icon="@drawable/ic_sportsman_menu"/>
+    <item
+            android:id="@+id/thirdPage"
+            android:title="championship"
+            android:icon="@drawable/ic_places_menu"/>
+</menu>

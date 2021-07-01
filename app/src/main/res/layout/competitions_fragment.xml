@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".FirstFragment"
+             android:background="@color/colorBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/main"
+            >
+
+        <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/scrollView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:paddingTop="10dp"
+                        android:id="@+id/frameLayout">
+
+                    <TextView
+                            android:text="2021г."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/yearView"
+                            android:fontFamily="@font/comfortaa"
+                            android:textSize="18sp"
+                            android:textColor="@color/colorCommon"
+                            android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                            android:text="4-борье с бегом"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/compKind"
+                            android:layout_gravity="center_horizontal"
+                            android:textColor="@color/colorCommon"
+                            android:fontFamily="@font/comfortaa"
+                            android:textSize="18sp"/>
+
+                    <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageButton"
+                            android:layout_gravity="right"
+                            android:background="@android:drawable/ic_dialog_map"
+                            android:layout_marginRight="20dp"
+                            android:tint="@color/colorCommon"
+                            android:layout_marginBottom="5dp"/>
+
+                </FrameLayout>
+
+                <View
+                        android:id="@+id/divider5"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#80FFFFFF"
+                        />
+
+
+                <ImageView
+                        android:src="@drawable/runner"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:id="@+id/runner"
+                        tools:srcCompat="@drawable/runner"
+                        android:background="@drawable/ic_ellipse_25"
+                        android:scaleType="centerInside"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:foreground="@drawable/ic_ellipse_28"
+                        android:clickable="true"
+                        android:focusable="true"/>
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                    <ImageView
+                            android:src="@drawable/runner"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/thrower"
+                            tools:srcCompat="@drawable/thrower"
+                            android:background="@drawable/ic_ellipse_25"
+                            android:scaleType="centerInside"
+                            android:padding="10dp"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="20dp"
+                            android:foreground="@drawable/ic_ellipse_28"
+                            android:focusable="true"
+                            android:clickable="true"/>
+
+                    <ImageView
+                            android:src="@drawable/runner"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/exes"
+                            tools:srcCompat="@drawable/exes"
+                            android:background="@drawable/ic_ellipse_25"
+                            android:scaleType="centerInside"
+                            android:padding="10dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:focusable="true"
+                            android:clickable="true"
+                            android:foreground="@drawable/ic_ellipse_28"/>
+                </FrameLayout>
+
+                <ImageView
+                        android:src="@drawable/runner"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:id="@+id/ski"
+                        tools:srcCompat="@drawable/skies"
+                        android:background="@drawable/ic_ellipse_25"
+                        android:scaleType="centerInside"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:foreground="@drawable/ic_ellipse_28"
+                        android:focusable="true"
+                        android:clickable="true"/>
+
+                <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp">
+
+                    <ImageView
+                            android:src="@drawable/runner"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/ex"
+                            tools:srcCompat="@drawable/ex"
+                            android:background="@drawable/ic_ellipse_25"
+                            android:scaleType="centerInside"
+                            android:padding="10dp"
+                            android:layout_gravity="start"
+                            android:layout_marginLeft="20dp"
+                            android:focusable="true"
+                            android:clickable="true"
+                            android:foreground="@drawable/ic_ellipse_28"/>
+
+                    <ImageView
+                            android:src="@drawable/runner"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/shooter"
+                            tools:srcCompat="@drawable/shoot"
+                            android:background="@drawable/ic_ellipse_25"
+                            android:scaleType="centerInside"
+                            android:padding="10dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:foreground="@drawable/ic_ellipse_28"
+                            android:focusable="true"
+                            android:clickable="true"/>
+                </FrameLayout>
+
+                <ImageView
+                        android:src="@drawable/runner"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:id="@+id/swim"
+                        tools:srcCompat="@drawable/swim"
+                        android:background="@drawable/ic_ellipse_25"
+                        android:scaleType="centerInside"
+                        android:padding="10dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:foreground="@drawable/ic_ellipse_28"
+                        android:focusable="true"
+                        android:clickable="true"/>
+
+                <FrameLayout
+                        android:layout_height="100dp"
+                        android:layout_width="match_parent">
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

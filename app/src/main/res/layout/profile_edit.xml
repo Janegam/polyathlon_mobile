@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   android:background="@color/colorBackground">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/colorBackground"
+            android:id="@+id/scrollView4"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/close"
+                    android:background="@android:drawable/ic_menu_close_clear_cancel"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"/>
+
+            <TextView
+                    android:text="Редактировать профиль"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView10"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorCommon"
+                    android:fontFamily="@font/comfortaa"
+                    android:textSize="24sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"/>
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                    android:layout_width="127dp"
+                    android:layout_height="165dp"
+                    android:src="@drawable/avatar"
+                    app:siBorderWidth="3dp"
+                    app:siBorderColor="@color/colorCommon"
+                    android:id="@+id/newavatar"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    />
+
+            <TextView
+                    android:text="Информация спортсмена"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView9"
+                    android:textColor="@color/colorCommon"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"/>
+
+            <EditText
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/first_name"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorCommon"
+                    android:background="@drawable/blank_button_selector"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:selectAllOnFocus="true"/>
+
+            <EditText
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/last_name"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textColor="@color/colorCommon"
+                    android:background="@drawable/blank_button_selector"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:selectAllOnFocus="true"/>
+
+            <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/regions"
+                    android:background="@drawable/blank_button_selector"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:popupBackground="@drawable/blank_frame"
+                    android:foregroundGravity="center_vertical|right"
+                    android:gravity="center"/>
+
+            <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/clubs"
+                    android:background="@drawable/blank_button_selector"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:dropDownSelector="@drawable/blank_button_selector"
+                    android:dropDownWidth="match_parent"
+                    android:popupBackground="@drawable/blank_frame"
+                    android:foregroundGravity="center_vertical|right"
+                    android:gravity="center"
+                    />
+
+            <EditText
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:id="@+id/date"
+                    android:textColor="@color/colorCommon"
+                    android:fontFamily="@font/roboto_medium"
+                    android:background="@drawable/blank_button_selector"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:selectAllOnFocus="true"/>
+
+            <TextView
+                    android:text="Данные для входа"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:textColor="@color/colorCommon"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"/>
+
+            <EditText
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/nikname"
+                    android:textColor="@color/colorCommon"
+                    android:fontFamily="@font/roboto_medium"
+                    android:background="@drawable/blank_button_selector"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="10dp"
+                    android:selectAllOnFocus="true"/>
+
+            <EditText
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/lastpass"
+                    android:hint="Старый пароль"
+                    android:textColor="@color/colorCommon"
+                    android:textColorHint="@color/colorCommonDark"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/blank_button_selector"
+                    android:paddingLeft="10dp"
+                    android:password="true"/>
+
+            <EditText
+                    android:layout_width="335dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/newpass"
+                    android:hint="Новый пароль"
+                    android:textColor="@color/colorCommon"
+                    android:textColorHint="@color/colorCommonDark"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/blank_button_selector"
+                    android:paddingLeft="10dp"
+                    android:password="true"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/constraintLayout">
+
+                <TextView
+                        android:text="Выйти"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/exit"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/comfortaa"
+                        android:textColor="@color/colorCommon"
+                        android:drawableEnd="@drawable/ic_baseline_exit_to_app_24"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:drawablePadding="10dp"
+                        android:gravity="center"/>
+
+                <TextView
+                        android:text="Сохранить"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/save"
+                        android:drawableLeft="@android:drawable/ic_menu_save"
+                        android:textColor="@color/colorCommon"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/comfortaa"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

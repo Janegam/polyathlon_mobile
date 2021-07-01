@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">newtest</string>
-    <string name="Label">Вице Президент</string>
-    <string name="see_fio">Столяров Евгений Евгеньевич</string>
-    <string name="see_info">E-mail: evgeni-stolyarov@yandex.ru\n
-        Служ. тел.: 8 (81751) 2-45-88\n
-        Адрес: Вологодская область. г. Шексна</string>
-    <string name="see_more">Больше информации</string>
+    <string name="launchTitle">Полиатлон</string>
+    <string name="logodesc">Логотип</string>
+    <string name="sign_up">Начать</string>
+    <string name="sign_in">У меня уже есть аккаунт</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="log_in">Войти</string>
 </resources>
